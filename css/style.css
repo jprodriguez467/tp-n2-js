@@ -368,7 +368,7 @@ body {
   align-items: center;
   font-weight: 600;
   font-size: 1.5rem;
-  color: #f1f2f4 !important;
+  color: #12d812 !important;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -487,6 +487,7 @@ body {
 }
 @media (max-width: 768px) {
   .container-fluid {
+    width: 100%;
     height: 100PX;
     background-color: #0952e6;
   }
