@@ -1036,6 +1036,9 @@ section p strong {
   .carousel-inner {
     width: 300px;
     height: auto;
+    margin: 0 auto;
+    max-width: 800px;
+    z-index: 99;
   }
 }
 
