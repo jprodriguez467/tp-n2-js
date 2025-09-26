@@ -38,6 +38,24 @@ header {
   }
 }
 
+.portada-secundaria {
+  width: 100%;
+  aspect-ratio: 1080/600;
+  background-image: url(/images/portada3184.png);
+  filter: brightness(0.8);
+  background-size: cover;
+  background-position: center;
+}
+
+.mea-culpa-regular {
+  font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+}
+
 .pdf-downloads {
   max-width: 600px;
   margin: 50px auto;
