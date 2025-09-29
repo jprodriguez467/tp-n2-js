@@ -33,7 +33,7 @@ body {
 .portada006 {
   width: 100%;
   aspect-ratio: 1080/600;
-  background-image: url(/images/portada-primario.png);
+  background-image: url(/images/portada-primario.PNG);
   filter: brightness(0.8);
   background-size: cover;
   background-position: center;
@@ -1111,6 +1111,17 @@ section p strong {
   padding: 20px;
   border-radius: 8px;
   font-weight: 500;
+}
+
+.promocion {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 24px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 body {
