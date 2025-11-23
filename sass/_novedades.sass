@@ -1,0 +1,138 @@
+@use 'variable' as *
+// Variables
+$primary-color: #2c5f8d
+$secondary-color: #4a90c8
+$accent-color: #f39c12
+$text-dark: #333
+$text-light: #555
+$bg-light: #f8f9fa
+$border-color: #e0e0e0
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+
+// Estilos para la sección del cronograma
+.cronograma-section
+    max-width: 900px
+    margin: 2rem auto
+    padding: 2rem
+    background: white
+    border-radius: 12px
+    box-shadow: $shadow
+
+h2
+    color: $primary-color
+    font-size: 2rem
+    margin-bottom: 1rem
+    padding-bottom: 0.5rem
+    border-bottom: 3px solid $accent-color
+    font-weight: 700
+
+h4
+    color: $text-light
+    font-size: 1.1rem
+    line-height: 1.6
+    margin-bottom: 2rem
+    font-weight: 400
+    padding: 1rem
+    background: $bg-light
+    border-left: 4px solid $secondary-color
+    border-radius: 4px
+
+p
+    color: $text-dark
+    line-height: 1.8
+    font-size: 1rem
+    white-space: pre-line
+
+// Estilos para el listado de fechas
+.cronograma-lista
+
+.mes-grupo
+    margin-bottom: 2.5rem
+
+    .mes-titulo
+        color: $primary-color
+        font-size: 1.5rem
+        font-weight: 700
+        margin-bottom: 1.5rem
+        padding-left: 0.5rem
+        border-left: 5px solid $accent-color
+
+.evento
+    padding: 1.25rem
+    margin-bottom: 1rem
+    background: white
+    border: 1px solid $border-color
+    border-radius: 8px
+    transition: all 0.3s ease
+    position: relative
+    overflow: hidden
+
+    &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        width: 4px
+        background: $secondary-color
+        transition: width 0.3s ease
+
+    &:hover
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15)
+        transform: translateX(4px)
+
+    &::before
+        width: 6px
+
+    .fecha
+        color: $primary-color
+        font-weight: 700
+        font-size: 1.1rem
+        margin-bottom: 0.5rem
+        display: flex
+        align-items: center
+
+    &::before
+        content: '📅'
+        margin-right: 0.5rem
+        font-size: 1.2rem
+
+    .descripcion
+        color: $text-dark
+        line-height: 1.6
+        padding-left: 2rem
+
+    &.especial
+        font-weight: 500
+        color: $secondary-color
+
+    .detalle
+        color: $text-light
+        font-size: 0.9rem
+        padding-left: 2rem
+        margin-top: 0.25rem
+        font-style: italic
+
+// Responsive
+@media (max-width: 768px)
+.cronograma-section
+    padding: 1.5rem
+    margin: 1rem
+
+    h2
+        font-size: 1.5rem
+
+    h4
+        font-size: 1rem
+        padding: 0.75rem
+
+.cronograma-lista
+    .evento
+        padding: 1rem
+
+    .fecha
+        font-size: 1rem
+
+    .descripcion,
+    .detalle
+        padding-left: 1.5rem
