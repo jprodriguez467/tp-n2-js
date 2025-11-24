@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Meta tags básicos SIEMPRE VAN PRIMERO -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mea+Culpa&display=swap"
-      rel="stylesheet"
+    <meta
+      property="logo-institucional.png"
+      content="https://cef-san-francisco-sf.vercel.app/images/logo-institucional.png"
     />
-    
-    <!--link de aos-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!--fin -->
-    <!-- Título de la página -->
-    <title>San Francisco - C.E.F. Santa Fe</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Centro Educativo Franciscano San Francisco en Santa Fe. Educación inicial y primaria con tradición desde 1591. Formación integral católica franciscana para niños y niñas."
+    />
+    <meta
+      name="keywords"
+      content="escuela primaria santa fe, educación franciscana, colegio católico santa fe, nivel inicial santa fe, CEF San Francisco, escuela religiosa, educación integral"
+    />
+    <meta name="author" content="Centro Educativo Franciscano San Francisco" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="theme-color" content="#8B4513" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://san-francisco-zeta.vercel.app/" />
+
+    <!-- Título optimizado para SEO (55-60 caracteres) -->
+    <title>
+      CEF San Francisco Santa Fe | Educación Inicial y Primaria Franciscana
+    </title>
 
     <!-- Open Graph meta tags para compartir en redes sociales -->
     <meta
       property="og:title"
-      content="C.E.F. Santa Fe - Escuela San Francisco"
+      content="Centro Educativo Franciscano San Francisco - Santa Fe"
     />
     <meta
       property="og:description"
-      content="Escuela San Francisco Santa Fe Capital"
+      content="Educación inicial y primaria con valores franciscanos desde 1591 en Santa Fe Capital. Formación integral para niños y niñas."
     />
     <meta
       property="og:image"
@@ -33,16 +46,78 @@
     />
     <meta property="og:url" content="https://san-francisco-zeta.vercel.app/" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Escuela San Francisco" />
+    <meta property="og:site_name" content="CEF San Francisco Santa Fe" />
+    <meta property="og:locale" content="es_AR" />
 
-    <!-- Twitter meta tags -->
+    <!-- Twitter/X meta tags -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="CEF San Francisco - Educación Franciscana en Santa Fe"
+    />
+    <meta
+      name="twitter:description"
+      content="Centro educativo con tradición desde 1591. Nivel inicial y primario con valores franciscanos."
+    />
     <meta
       name="twitter:image"
       content="https://san-francisco-zeta.vercel.app/images/logo-institucional.png"
     />
 
-    <!-- Bootstrap CSS (solo una versión - la más reciente) -->
+    <!-- Schema.org JSON-LD para mejor SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Centro Educativo Franciscano San Francisco",
+        "alternateName": "CEF San Francisco Santa Fe",
+        "url": "https://san-francisco-zeta.vercel.app",
+        "logo": "https://san-francisco-zeta.vercel.app/images/logo-institucional.png",
+        "description": "Centro educativo franciscano con nivel inicial y primario en Santa Fe Capital. Tradición educativa desde 1591.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "San Martín 1326",
+          "addressLocality": "Santa Fe",
+          "addressRegion": "Santa Fe",
+          "postalCode": "S3000",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -31.660082,
+          "longitude": -60.710814
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+54-342-5135795",
+          "contactType": "Admissions",
+          "areaServed": "AR",
+          "availableLanguage": "Spanish"
+        },
+        "sameAs": [
+          "https://www.instagram.com/escuelasanfrancisco1001sf",
+          "https://www.youtube.com/@CEFSanFrancisco"
+        ],
+        "foundingDate": "1591"
+      }
+    </script>
+
+    <!-- Preconnect para optimización de carga -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mea+Culpa&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -56,25 +131,31 @@
       rel="stylesheet"
     />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Header con nav semántico -->
+    <header role="banner">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light"
+        role="navigation"
+        aria-label="Navegación principal"
+      >
         <div class="container-fluid">
           <img
             class="logo"
             src="./images/logo-institucional.png"
-            width="40px"
-            height="40px"
+            alt="Logo Centro Educativo Franciscano San Francisco"
+            width="40"
+            height="40"
           />
-          <a class="navbar-brand" href="#">San Francisco-S.F.</a>
+          <a
+            class="navbar-brand"
+            href="/"
+            aria-label="Inicio - San Francisco Santa Fe"
+            >San Francisco-S.F.</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -82,7 +163,7 @@
             data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-label="Abrir menú de navegación"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -112,6 +193,7 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  aria-haspopup="true"
                 >
                   Niveles
                 </a>
@@ -121,15 +203,14 @@
                 >
                   <li>
                     <a class="dropdown-item" href="../pages/inicial.html"
-                      >Inicial</a
+                      >Nivel Inicial</a
                     >
                   </li>
                   <li>
                     <a class="dropdown-item" href="../pages/pimario.html"
-                      >Primario</a
+                      >Nivel Primario</a
                     >
                   </li>
-                  
                 </ul>
               </li>
             </ul>
@@ -137,92 +218,113 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class="portada001">
-        <h1 class="mea-culpa-1001" data-aos="fade-up">
+
+    <!-- Main content -->
+    <main role="main">
+      <!-- Sección portada con heading principal -->
+      <section class="portada001" aria-labelledby="lema-principal">
+        <h1 id="lema-principal" class="mea-culpa-1001" data-aos="fade-up">
           Por Cristo, en San Francisco<br />
           y para los demás.
         </h1>
       </section>
-    
-    <section>
-      <h2 data-aos="fade-left">Historia.</h2>
-      <h4 data-aos="fade-right">Centro Educativo Franciscano.</h4>
-      <p data-aos="fade-up-right">
-        La Escuela Primaria N° 1001 de San Francisco es la del Centro Educativo
-        Franciscano de la ciudad de Santa Fe, la primera institución educativa
-        de la provincia, fundada para ofrecer una educación formal a criollos y
-        aborígenes desde 1591, operando en su ubicación actual desde 1790, y
-        brindando hoy niveles inicial, primario y secundario con un enfoque
-        integral.
-      </p>
-    </section>
-    <!--seccion contacto-->
-    <!--inicio de la caja de contactos-->
-<section class="caja_1">
-  <section class="caja_2">
-    <div class="caja_3">
-          <h1 class="titulo_contacto">
-            INFORMACIÓN DE CONTACO <br />
-            Nivel Inicial y Primario.
-          </h1>
-          <form
-            target="_blank"
-            action="https://formsubmit.co/consultasnp@cef-sanfrancisco-sf.edu.ar"
-            method="POST"
-          >
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    placeholder="Tu nombre completo."
-                    required
-                  />
-                </div>
-                <div class="col">
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    placeholder="tu-email@gmail.com"
-                    required
-                  />
+
+      <!-- Sección historia con contenido semántico -->
+      <section aria-labelledby="historia-titulo">
+        <h2 id="historia-titulo" data-aos="fade-left">
+          Historia del Centro Educativo Franciscano
+        </h2>
+        <h3 data-aos="fade-right">Centro Educativo Franciscano de Santa Fe</h3>
+        <p data-aos="fade-up-right">
+          La Escuela Primaria N° 1001 de San Francisco es la del Centro
+          Educativo Franciscano de la ciudad de Santa Fe, la primera institución
+          educativa de la provincia, fundada para ofrecer una educación formal a
+          criollos y aborígenes desde 1591, operando en su ubicación actual
+          desde 1790, y brindando hoy niveles inicial, primario y secundario con
+          un enfoque integral basado en los valores franciscanos.
+        </p>
+      </section>
+
+      <!-- Sección contacto -->
+      <section class="caja_1" aria-labelledby="contacto-titulo">
+        <div class="caja_2">
+          <div class="caja_3">
+            <h2 id="contacto-titulo" class="titulo_contacto">
+              Información de Contacto<br />
+              Nivel Inicial y Primario
+            </h2>
+            <form
+              target="_blank"
+              action="https://formsubmit.co/consultasnp@cef-sanfrancisco-sf.edu.ar"
+              method="POST"
+              aria-label="Formulario de contacto"
+            >
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <label for="name" class="visually-hidden"
+                      >Nombre completo</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Tu nombre completo"
+                      required
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="tu-email@gmail.com"
+                      required
+                      aria-required="true"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <textarea
-                placeholder="Escribí tu consula aquí..."
-                class="form-control"
-                name="message"
-                rows="10"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-lg btn-dark btn-block">
-              Enviar consulta.
-            </button>
-          </form>
-        </div>
-        <div class="mapa">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.041570684258!2d-60.71295892350083!3d-31.660082408076025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9062dd201b5%3A0xb894b62570661d32!2sSan%20Mart%C3%ADn%201326%2C%20S3000%20Santa%20Fe%20de%20la%20Vera%20Cruz%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1759942071465!5m2!1ses-419!2sar"
-            width="450"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+              <div class="form-group">
+                <label for="message" class="visually-hidden">Mensaje</label>
+                <textarea
+                  id="message"
+                  placeholder="Escribí tu consulta aquí..."
+                  class="form-control"
+                  name="message"
+                  rows="10"
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg btn-dark btn-block">
+                Enviar consulta
+              </button>
+            </form>
+          </div>
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.041570684258!2d-60.71295892350083!3d-31.660082408076025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9062dd201b5%3A0xb894b62570661d32!2sSan%20Mart%C3%ADn%201326%2C%20S3000%20Santa%20Fe%20de%20la%20Vera%20Cruz%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1759942071465!5m2!1ses-419!2sar"
+              width="450"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación del Centro Educativo Franciscano San Francisco en San Martín 1326, Santa Fe"
+              aria-label="Mapa de ubicación"
+            ></iframe>
+          </div>
         </div>
       </section>
-<!--fin de la caja de contactos-->
- </main>
-<!--footer inicio-->
-<footer class="pie">
+    </main>
+
+    <!--footer inicio-->
+    <footer class="pie">
       <div class="text-center">
         <h5 class="cont">Contáctanos</h5>
         <div class="social-section">
@@ -239,9 +341,8 @@
             </a>
           </div>
 
-       
-<!-- Instagram Niveles Inicial y  Primario -->
-    <div class="social-group">
+          <!-- Instagram Niveles Inicial y  Primario -->
+          <div class="social-group">
             <h6>
               Niveles<br />
               Inicial-Primario
@@ -255,21 +356,20 @@
               <i class="fab fa-instagram"></i>
             </a>
           </div>
- <!-- inicio YouTube -->
-        <div class="social-group">
-          <h6>YouTube</h6>
-          <a
-            href="https://www.youtube.com/@CEFSanFrancisco"
-            target="_blank"
-            class="text-white youtube-link"
-            aria-label="YouTube"
-          >
-            <i class="fab fa-youtube"></i>
-          </a>
+          <!-- inicio YouTube -->
+          <div class="social-group">
+            <h6>YouTube</h6>
+            <a
+              href="https://www.youtube.com/@CEFSanFrancisco"
+              target="_blank"
+              class="text-white youtube-link"
+              aria-label="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
         </div>
-
-      </div>
-      <!--fin de youtube-->  
+        <!--fin de youtube-->
         <!-- Copyright -->
         <div class="copyright-container">
           <p class="copyright">
@@ -280,16 +380,18 @@
       </div>
     </footer>
 
+    <!-- Scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <!--aos-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
     </script>
-    <!--fin-->
   </body>
 </html>

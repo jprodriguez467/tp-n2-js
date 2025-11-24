@@ -1,19 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
   <head>
+    <!-- Meta tags básicos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--link de archivos descargables-->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Novedades</title>
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Novedades y cronograma 2025 del Centro Educativo Franciscano San Francisco. Actividades, eventos, actos escolares y fechas importantes del ciclo lectivo en Santa Fe."
+    />
+    <meta
+      name="keywords"
+      content="novedades cef san francisco, calendario escolar 2025 santa fe, eventos escolares, actos escolares santa fe, cronograma ciclo lectivo, actividades colegio franciscano"
+    />
+    <meta name="author" content="Centro Educativo Franciscano San Francisco" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="es-AR" />
+    <meta name="geo.region" content="AR-S" />
+    <meta name="geo.placename" content="Santa Fe" />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://san-francisco-zeta.vercel.app/pages/novedades.html"
+    />
+
+    <!-- Título optimizado para SEO -->
+    <title>
+      Novedades 2025 - CEF San Francisco Santa Fe | Calendario y Eventos
+      Escolares
+    </title>
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Novedades 2025 - Centro Educativo Franciscano San Francisco"
+    />
+    <meta
+      property="og:description"
+      content="Cronograma de actividades y eventos del ciclo lectivo 2025. Actos, muestras y fechas importantes del CEF San Francisco."
+    />
+    <meta
+      property="og:url"
+      content="https://san-francisco-zeta.vercel.app/pages/novedades.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://san-francisco-zeta.vercel.app/images/logo-primaria.png"
+    />
+    <meta property="og:locale" content="es_AR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Novedades 2025 - CEF San Francisco" />
+    <meta
+      name="twitter:description"
+      content="Cronograma y calendario de eventos del ciclo lectivo 2025"
+    />
+    <meta
+      name="twitter:image"
+      content="https://san-francisco-zeta.vercel.app/images/logo-primaria.png"
+    />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Novedades 2025 - CEF San Francisco",
+        "description": "Cronograma de actividades y eventos del ciclo lectivo 2025",
+        "url": "https://san-francisco-zeta.vercel.app/pages/novedades.html",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Centro Educativo Franciscano San Francisco",
+          "url": "https://san-francisco-zeta.vercel.app"
+        },
+        "publisher": {
+          "@type": "EducationalOrganization",
+          "name": "Centro Educativo Franciscano San Francisco",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "San Martín 1326",
+            "addressLocality": "Santa Fe",
+            "addressRegion": "Santa Fe",
+            "addressCountry": "AR"
+          }
+        }
+      }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://san-francisco-zeta.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Novedades",
+            "item": "https://san-francisco-zeta.vercel.app/pages/novedades.html"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/logo-institucional.png" />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
 
-    <title>Escuela San Francisco- Santa Fe- Capital</title>
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,15 +134,31 @@
       crossorigin="anonymous"
     />
 
-    <!-- Tu CSS personalizado al final para que tenga prioridad -->
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header role="banner">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light"
+        role="navigation"
+        aria-label="Navegación principal"
+      >
         <div class="container-fluid">
-          <img class="logo" src="../images/logo-primaria.png" />
-          <a class="navbar-brand" href="../index.html">San Francisco-S.F.</a>
+          <img
+            class="logo"
+            src="../images/logo-primaria.png"
+            alt="Logo Nivel Primario CEF San Francisco"
+            width="40"
+            height="40"
+            loading="eager"
+          />
+          <a
+            class="navbar-brand"
+            href="../index.html"
+            aria-label="Volver al inicio"
+            >San Francisco-S.F.</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -37,7 +166,7 @@
             data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-label="Abrir menú de navegación"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -64,6 +193,7 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  aria-haspopup="true"
                 >
                   Niveles
                 </a>
@@ -73,15 +203,14 @@
                 >
                   <li>
                     <a class="dropdown-item" href="../pages/inicial.html"
-                      >Inicial</a
+                      >Nivel Inicial</a
                     >
                   </li>
                   <li>
                     <a class="dropdown-item" href="../pages/pimario.html"
-                      >Primario</a
+                      >Nivel Primario</a
                     >
                   </li>
-                 
                 </ul>
               </li>
             </ul>
@@ -89,39 +218,64 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section>
-      <h2>NOVEDADES 2025.</h2>
-      <h4>
-        Estimada comunidad educativa:
-A continuación, damos a conocer el detalle del cronograma
-de las actividades de cierre ciclo lectivo para agendar:
-      </h4>
-      <p>
-       NOVIEMBRE:
-Miércoles 19:
-Muestra de cierre de JAF, horario de clases habituales.
 
-Miércoles 26:
-Muestra final de los Proyectos de Nivel Inicial y Primario. 
+    <main role="main">
+      <section aria-labelledby="novedades-titulo">
+        <h1 id="novedades-titulo">Novedades del Ciclo Lectivo 2025</h1>
+        <h2>
+          Cronograma de Actividades <br />
+          Centro Educativo <br />
+          San Francisco
+        </h2>
 
-Viernes 28: Experiencia TAU
-DICIEMBRE:
+        <article>
+          <h3>Estimada comunidad educativa:</h3>
+          <p>
+            A continuación, damos a conocer el detalle del cronograma de las
+            actividades de cierre del ciclo lectivo para agendar:
+          </p>
 
-Martes 9:
-Acto promoción de Nivel Inicial Sala de 5 años y 7mo grado.
-Lugar: Convento. Turno mañana.
+          <div class="calendario-eventos">
+            <h3>📅 NOVIEMBRE 2025</h3>
+            <ul>
+              <li>
+                <strong>Miércoles 19:</strong><br />
+                Muestra de cierre de JAF, horario de clases habituales.
+              </li>
+              <li>
+                <strong>Miércoles 26:</strong><br />
+                Muestra final de los Proyectos de Nivel Inicial y Primario.
+              </li>
+              <li>
+                <strong>Viernes 28:</strong><br />
+                Experiencia TAU
+              </li>
+            </ul>
 
+            <h3>🎓 DICIEMBRE 2025</h3>
+            <ul>
+              <li>
+                <strong>Martes 9:</strong><br />
+                Acto de promoción de Nivel Inicial Sala de 5 años y 7mo
+                grado.<br />
+                <em>Lugar: Convento. Turno mañana.</em>
+              </li>
+              <li>
+                <strong>Viernes 12:</strong><br />
+                Misa de Adviento y cierre del ciclo lectivo en el turno de la
+                mañana.
+              </li>
+              <li>
+                <strong>Lunes 15 a Viernes 19:</strong><br />
+                Fortalecimiento pedagógico Nivel Primario
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
 
-
-Viernes 12: Misa de Adviento y cierre del ciclo lectivo en el turno de la mañana.
-
-Lunes 15 a viernes 19 fortalecimiento pedagógico Nivel Primario
-
-      </p>
-      <div>
-        </main>
-   <!--footer inicio-->
+    <!--footer inicio-->
     <footer class="pie">
       <div class="text-center">
         <h5 class="cont">Contáctanos</h5>
@@ -177,7 +331,6 @@ Lunes 15 a viernes 19 fortalecimiento pedagógico Nivel Primario
         </div>
       </div>
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -873,7 +873,7 @@ section p strong {
     padding: 40px 0;
   }
   section > * {
-    padding: 0 15px;
+    padding: 10 15px;
   }
   section h2 {
     font-size: 2rem;
@@ -1039,7 +1039,7 @@ p {
   margin: 1rem;
 }
 .cronograma-section h2 {
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 .cronograma-section h4 {
   font-size: 1rem;
