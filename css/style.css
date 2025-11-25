@@ -160,6 +160,39 @@ h3 {
   color: #721c24;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.pie {
+  margin-top: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.pie {
+  margin-top: auto;
+}
+
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
