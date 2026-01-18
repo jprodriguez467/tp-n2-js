@@ -1,0 +1,309 @@
+@use 'variables' as *
+
+@mixin flex-center
+    display: flex
+    align-items: center
+    justify-content: center
+
+@mixin flex-between
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+@mixin card-style
+    background: $color-white
+    padding: $spacing-lg
+    border-radius: $border-radius-lg
+    box-shadow: $shadow-sm
+
+@mixin button-base
+    width: 100%
+    padding: $spacing-sm
+    border: none
+    border-radius: $border-radius-sm
+    cursor: pointer
+    font-weight: bold
+    font-size: 1em
+
+@mixin gradient-bg
+    background: linear-gradient(135deg, $color-primary 0%, $color-secondary 100%)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    background: linear-gradient(135deg, $color-primary 0%, $color-secondary 100%)
+    min-height: 100vh
+    padding: $spacing-lg
+
+.container
+    color: #ec1414
+
+    margin: 0 auto
+
+header
+    @include card-style
+    @include flex-between
+    margin-bottom: $spacing-xl
+
+    h1
+        color: $color-primary
+        font-size: 2em
+
+.cart-icon
+    position: relative
+    cursor: pointer
+    font-size: 2em
+
+    &:hover
+        transform: scale(1.1)
+
+.cart-count
+    position: absolute
+    top: -10px
+    right: -10px
+    background: $color-danger
+    color: $color-white
+    border-radius: $border-radius-circle
+    width: 25px
+    height: 25px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 0.6em
+    font-weight: bold
+
+.main-content
+    display: grid
+    grid-template-columns: 2fr 1fr
+    gap: $spacing-lg
+
+.products-section
+    @include card-style
+
+.filters
+    display: flex
+    gap: $spacing-md
+    margin-bottom: $spacing-lg
+    flex-wrap: wrap
+
+.filter-group
+    display: flex
+    flex-direction: column
+    gap: $spacing-xs
+
+    label
+        font-weight: bold
+        color: $color-text-dark
+        font-size: 0.9em
+
+    select,
+    input
+        padding: 8px 12px
+        border: 2px solid $color-primary
+        border-radius: $border-radius-sm
+        font-size: 1em
+
+.products-grid
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+    gap: $spacing-lg
+
+.product-card
+    border: 2px solid $color-border
+    border-radius: $border-radius-lg
+    padding: $spacing-md
+
+    cursor: pointer
+
+    &:hover
+        transform: translateY(-5px)
+        box-shadow: $shadow-md
+        border-color: $color-primary
+
+.product-image
+    width: 100%
+    height: 180px
+    background: $color-bg-light
+    border-radius: $border-radius-md
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    margin-bottom: $spacing-sm
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transition: transform 0.3s
+
+        &:hover
+            transform: scale(1.05)
+.product-name
+    font-weight: bold
+    color: $color-text-dark
+    margin-bottom: $spacing-xs
+    font-size: 1.1em
+
+.product-category
+    color: $color-text-medium
+    font-size: 0.9em
+    margin-bottom: $spacing-sm
+
+.product-price
+    color: $color-primary
+    font-size: 1.5em
+    font-weight: bold
+    margin-bottom: $spacing-sm
+
+.product-stock
+    color: $color-success
+    font-size: 0.9em
+    margin-bottom: $spacing-sm
+
+.btn
+    @include button-base
+
+.btn-add
+    background: $color-primary
+    color: $color-white
+
+    &:hover
+        background: $color-primary-dark
+
+    &:disabled
+        background: $color-disabled
+        cursor: not-allowed
+
+.btn-checkout
+    background: $color-success
+    color: $color-white
+
+    &:hover
+        background: $color-success-dark
+
+.btn-clear
+    background: $color-danger
+    color: $color-white
+    margin-top: $spacing-sm
+
+    &:hover
+        background: $color-danger-dark
+
+.cart-section
+    @include card-style
+    height: fit-content
+    position: sticky
+    top: $spacing-lg
+
+.cart-title
+    color: $color-primary
+    font-size: 1.5em
+    margin-bottom: $spacing-lg
+    border-bottom: 2px solid $color-primary
+    padding-bottom: $spacing-sm
+
+.cart-empty
+    text-align: center
+    color: $color-text-light
+    padding: $spacing-xxl $spacing-lg
+
+.cart-items
+    max-height: 400px
+    overflow-y: auto
+    margin-bottom: $spacing-lg
+
+.cart-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: $spacing-md
+    border-bottom: 1px solid $color-border
+    gap: $spacing-sm
+
+.cart-item-info
+    flex: 1
+
+.cart-item-name
+    font-weight: bold
+    color: $color-text-dark
+    margin-bottom: $spacing-xs
+
+.cart-item-price
+    color: $color-primary
+    font-size: 0.9em
+
+.cart-item-controls
+    display: flex
+    align-items: center
+    gap: $spacing-sm
+
+.quantity-btn
+    width: 30px
+    height: 30px
+    border: none
+    background: $color-primary
+    color: $color-white
+    border-radius: $border-radius-sm
+    cursor: pointer
+    font-weight: bold
+
+    &:hover
+        background: $color-primary-dark
+
+.quantity
+    font-weight: bold
+    min-width: 20px
+    text-align: center
+
+.remove-btn
+    background: $color-danger
+    color: $color-white
+    border: none
+    padding: $spacing-xs $spacing-sm
+    border-radius: $border-radius-sm
+    cursor: pointer
+    font-size: 0.9em
+
+    &:hover
+        background: $color-danger-dark
+
+.cart-summary
+    background: $color-bg-light
+    padding: $spacing-md
+    border-radius: $border-radius-md
+    margin-bottom: $spacing-md
+
+.summary-row
+    display: flex
+    justify-content: space-between
+    margin-bottom: $spacing-sm
+    color: $color-text-dark
+
+    &.total
+        font-size: 1.3em
+        font-weight: bold
+        color: $color-primary
+        border-top: 2px solid $color-primary
+        padding-top: $spacing-sm
+        margin-top: $spacing-sm
+
+.notification
+    position: fixed
+    top: $spacing-lg
+    right: $spacing-lg
+    background: $color-success
+    color: $color-white
+    padding: $spacing-md 25px
+    border-radius: $border-radius-md
+    box-shadow: $shadow-lg
+    transform: translateX(400px)
+
+    z-index: 1000
+
+    &.show
+        transform: translateX(0)
