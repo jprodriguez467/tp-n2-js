@@ -6,7 +6,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #000207 50%, #f4f4f5 100%);
   min-height: 100vh;
   padding: 20px;
 }
@@ -27,7 +27,7 @@ header {
   margin-bottom: 30px;
 }
 header h1 {
-  color: #667eea;
+  color: #000207;
   font-size: 2em;
 }
 
@@ -89,7 +89,7 @@ header h1 {
 .filter-group select,
 .filter-group input {
   padding: 8px 12px;
-  border: 2px solid #667eea;
+  border: 2px solid #000207;
   border-radius: 5px;
   font-size: 1em;
 }
@@ -109,7 +109,7 @@ header h1 {
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-color: #667eea;
+  border-color: #000207;
 }
 
 .product-image {
@@ -147,7 +147,7 @@ header h1 {
 }
 
 .product-price {
-  color: #667eea;
+  color: #000207;
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 10px;
@@ -170,7 +170,7 @@ header h1 {
 }
 
 .btn-add {
-  background: #667eea;
+  background: #000207;
   color: white;
 }
 .btn-add:hover {
@@ -209,10 +209,10 @@ header h1 {
 }
 
 .cart-title {
-  color: #667eea;
+  color: #000207;
   font-size: 1.5em;
   margin-bottom: 20px;
-  border-bottom: 2px solid #667eea;
+  border-bottom: 2px solid #000207;
   padding-bottom: 10px;
 }
 
@@ -248,7 +248,7 @@ header h1 {
 }
 
 .cart-item-price {
-  color: #667eea;
+  color: #000207;
   font-size: 0.9em;
 }
 
@@ -262,7 +262,7 @@ header h1 {
   width: 30px;
   height: 30px;
   border: none;
-  background: #667eea;
+  background: #000207;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -307,8 +307,8 @@ header h1 {
 .summary-row.total {
   font-size: 1.3em;
   font-weight: bold;
-  color: #667eea;
-  border-top: 2px solid #667eea;
+  color: #000207;
+  border-top: 2px solid #000207;
   padding-top: 10px;
   margin-top: 10px;
 }
